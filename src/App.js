@@ -1,10 +1,10 @@
 import './App.css';
-import { PeticionApi } from './components/PeticionApi';
+import { PeticionApiPoke } from './components/PeticionApiPoke';
 
 function App() {
   return (
     <div className="App">
-      <PeticionApi/>
+      <PeticionApiPoke/>
     </div>
   );
 }

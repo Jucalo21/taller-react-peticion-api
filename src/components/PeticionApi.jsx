@@ -3,13 +3,12 @@ import React from 'react'
 
 export const PeticionApi = () => {
   const [personajes, setPersonajes]= React.useState([])
-  const [paginacion, setPaginacion]= React.useState(0)
-  const [paginacion2]= React.useState(1)
+  const [paginacion, setPaginacion]= React.useState(1)
 
 
   const obtenerPersonajes = async()=>{
     try {
-        const res= await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${paginacion2}&offset=${paginacion}/`)
+        const res= await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${1}&offset=${paginacion}/`)
         const {results}=await res.json()
         setPersonajes(results)
     } catch(error){
@@ -36,8 +35,8 @@ export const PeticionApi = () => {
         {
             personajes.map((resultado)=>(
               <div>
-                <h4>{resultado.id}-{resultado.name}</h4>
-                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${paginacion+1}.png`} alt={resultado.name} />
+                <h4>{resultado.id}-{resultado.name}-{resultado.types}</h4>
+                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${paginacion-1}.png`} alt={resultado.name} />
               </div>  
             ))
         }
