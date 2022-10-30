@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.tarjeta{
+  background-color: #61c2fb;
+  display:flex;
+  flex-direction:column;
+  width:420px;
+  border: 1px solid lightblue;
+  box-shadow: 2px 2px 8px 4px lightblue;
+  border-radius:15px;
+  font-family: sans-serif;
+}
+
+.nombre{
+  font-size: 20px;
+  padding: 10px 10px 0 10px;;
+  color: black;
+}
+
+.titulo{
+  font-size: 24px;
+  padding: 10px 10px 0 10px;;
+  margin-left: -1200px;
+}
+
+

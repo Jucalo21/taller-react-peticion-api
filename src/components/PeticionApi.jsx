@@ -8,7 +8,7 @@ export const PeticionApi = () => {
 
   const obtenerPersonajes = async()=>{
     try {
-        const res= await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${1}&offset=${paginacion}/`)
+        const res= await fetch(`https://rickandmortyapi.com/api/character/?page=${paginacion}`)
         const {results}=await res.json()
         setPersonajes(results)
     } catch(error){
@@ -36,7 +36,7 @@ export const PeticionApi = () => {
             personajes.map((resultado)=>(
               <div>
                 <h4>{resultado.id}-{resultado.name}-{resultado.types}</h4>
-                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${paginacion-1}.png`} alt={resultado.name} />
+                <img src={resultado.image} alt={resultado.name} />
               </div>  
             ))
         }
