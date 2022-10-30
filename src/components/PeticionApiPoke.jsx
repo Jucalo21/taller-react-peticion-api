@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import {UseFetch} from './UseFetch'
+import { Cards } from './Cards'
 
 export const PeticionApiPoke = () => {
     const [url,setUrl]=useState('https://pokeapi.co/api/v2/pokemon/')

@@ -4,10 +4,10 @@ import { CardPoke } from './CardPoke'
 export const Cards = (results) => {
   return (
     <div className='container'>
-        <ul>
+        <ul className='cards'>
             {
                 results.map( p=>(
-                    <li>
+                    <li className='card-item' key={p.name}>
                         <CardPoke url={p.url}/>
                     </li>
                 )

@@ -14,12 +14,12 @@ export const CardPoke = () => {
         :
         <div className='card' style={{width:'14px'}}>
             <div className='card-header'>
-                <h5 className='card-title'></h5>
+                <h5 className='card-title'>{data.id}</h5>
                 <div className='card-body'>
-                    <img src="" alt="pokemon" />
+                    <img src={data.sprites.other.front_default} alt="pokemon" />
                 </div>
                 <div className='card-footer'>
-                    <div className='card-text'></div>
+                    <div className='card-text'>{data.forms[0].name}</div>
                 </div>
             </div>
 
