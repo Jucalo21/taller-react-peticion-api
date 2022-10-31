@@ -17,7 +17,7 @@ export const PeticionApiPrueba = () => {
 
             setPersonaje(personajeData);
         });
-    }, []);
+    });
     const siguiente = async()=>{
         setPaginacion(paginacion + 1)
         PeticionApiPrueba()
@@ -28,15 +28,12 @@ export const PeticionApiPrueba = () => {
         PeticionApiPrueba()
       }
     return (
-      //
         <div>
             <h1 className="titulo">Pokemon</h1>
         {personaje ? (
-        <div className="tarjeta"> <img
-                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${paginacion+1}.svg`}
-                className="imagen"
-                alt="profile-image"
-              />
+        <div className="tarjeta"> <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${paginacion+1}.svg`}
+        className="imagen"
+        alt="imagen" />
             <div className="nombre">
              <h4>{paginacion+1}-{personaje.name}</h4>
             </div>
@@ -44,7 +41,6 @@ export const PeticionApiPrueba = () => {
         <button className="Button" onClick={anterior}>Anterior</button>
      </div>) : null}
      </div>
-   //   ))
   )
 
 }
