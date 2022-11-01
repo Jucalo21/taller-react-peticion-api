@@ -43,8 +43,10 @@
   border-radius: 5px; 
   background-color: rgba(15, 60, 185, 0.678);
   display: flexbox;
-  flex-direction: row;
-  margin: 150px;
+  margin-left: 550px;
+  margin-right: 550px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .boton{
