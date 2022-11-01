@@ -37,27 +37,38 @@
   }
 }
 
-.tarjeta{
-  background-color: #61c2fb;
-  display:flex;
-  flex-direction:column;
-  width:420px;
-  border: 1px solid lightblue;
-  box-shadow: 2px 2px 8px 4px lightblue;
-  border-radius:15px;
-  font-family: sans-serif;
+.card {
+  box-shadow: -10px 10px 10px 10px rgb(87, 6, 180);
+  transition: 0.3s;
+  border-radius: 5px; 
+  background-color: rgba(15, 60, 185, 0.678);
+  display: flexbox;
+  flex-direction: row;
+  margin: 150px;
 }
 
-.nombre{
-  font-size: 20px;
-  padding: 10px 10px 0 10px;;
-  color: black;
+.boton{
+  box-sizing: border-box;
+  font-family: inherit;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  box-shadow: shadow(low);
+  border: 1px solid rgb(158, 10, 226);
+  background-color: rgb(198, 182, 204);
+  color: var(--button-text-color);
+  font-size: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.titulo{
-  font-size: 24px;
-  padding: 10px 10px 0 10px;;
-  margin-left: -1200px;
+.container {
+  padding: 2px 16px;
+  margin: 100px;
 }
 
+img {
+  border-radius: 5px 5px 5px 5px;
+  width: 40%;
+}
 
