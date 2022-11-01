@@ -37,17 +37,28 @@
   }
 }
 
+.body{
+  background-color: rgba(174, 108, 177, 0.493);
+}
+
+.column {
+  float: left;
+  width: 200px;
+  padding: 10px 10px 100px 100px;
+}
+
 .card {
-  box-shadow: -10px 10px 10px 10px rgb(87, 6, 180);
+  box-shadow: -10px 10px 10px 10px rgb(230, 16, 16);
   transition: 0.3s;
   border-radius: 5px; 
   background-color: rgba(15, 60, 185, 0.678);
-  display: flexbox;
-  margin-left: 550px;
-  margin-right: 550px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-left: -50px;
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  text-align: center;
 }
+
 
 .boton{
   box-sizing: border-box;
@@ -65,12 +76,12 @@
 }
 
 .container {
-  padding: 2px 16px;
-  margin: 100px;
+  font-style: italic;
+  color: #0c0a99e3;
 }
 
 img {
   border-radius: 5px 5px 5px 5px;
-  width: 40%;
+  width: 50%;
 }
 

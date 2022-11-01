@@ -34,12 +34,14 @@ export const PeticionApi = () => {
         <button className="boton" onClick={anterior}>Anterior</button>
         {
             personajes.map((resultado)=>(
-              <div className="card">
+              <div className="row">
+                <div className="column">
+                <div className="card">
                 <img src={resultado.imageUrl} alt={resultado.name} />
-                <div className="container"><h4><b>{resultado._id}-{resultado.name}</b></h4></div>
-                
-                
-              </div>  
+                <div className="container"><h4><b>{resultado._id}-{"Nombre: "}{resultado.name}</b></h4></div>
+                </div>
+              </div>
+              </div>                
             ))
         }
     </div>
