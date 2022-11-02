@@ -29,16 +29,16 @@ export const PeticionApi = () => {
     return (
     <div>
         <h1 className="titulo">Disney</h1>
-        <button className="boton" onClick={obtenerPersonajes}>Personajes</button>
-        <button className="boton" onClick={siguiente}>Siguiente</button>
-        <button className="boton" onClick={anterior}>Anterior</button>
+        <button className="button" onClick={obtenerPersonajes}>Personajes</button>
+        <button className="button" onClick={siguiente}>Siguiente</button>
+        <button className="button" onClick={anterior}>Anterior</button>
         {
             personajes.map((resultado)=>(
               <div className="row">
                 <div className="column">
                 <div className="card">
                 <img src={resultado.imageUrl} alt={resultado.name} />
-                <div className="container"><h4><b>{resultado._id}-{"Nombre: "}{resultado.name}</b></h4></div>
+                <div className="container"><h4><p>{resultado._id}-{"Nombre: "}{resultado.name}</p><p>{"Films: "}{resultado.films}</p><p>{"Serie: "}{resultado.tvShows}</p></h4></div>
                 </div>
               </div>
               </div>                
